@@ -1,0 +1,9 @@
+#!/bin/bash
+owd=$(pwd)
+cd "../kag"
+libdir=$(readlink -f ../usr/lib/)
+export LD_LIBRARY_PATH="${libdir}:${LD_LIBRARY_PATH}"
+echo "Library Path: ${libdir}"
+ldd ./KAG
+./KAG
+cd "${owd}"
