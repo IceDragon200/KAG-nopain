@@ -11,6 +11,7 @@ git clone https://github.com/IceDragon200/KAG-nopain.git
 
 # SETUP YOUR LIBRARIES
 cd KAG-nopain
+# nopain will attempt to sudo for the install_pkgs.sh, you may be prompted for your password.
 ./nopain.sh
 
 # PLAY LIKE A BAWS
